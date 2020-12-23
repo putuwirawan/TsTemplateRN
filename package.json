@@ -1,0 +1,73 @@
+{
+  "name": "MyAppTs",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "android": "react-native run-android ",
+    "ios": "react-native run-ios",
+    "start": "react-native ",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "tsc": "tsc",
+    "clean": "rimraf build",
+    "build": "yarn run clean && yarn run tsc && cp -a src/Assets/Images build/Assets/Images  "
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.2",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/drawer": "^5.8.6",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
+    "@types/qs": "^6.9.4",
+    "@types/react": "^16.9.49",
+    "qs": "^6.9.4",
+    "rax": "^1.1.4",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-animatable": "^1.3.3",
+    "react-native-elements": "^2.0.4",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.16.1",
+    "react-native-vector-icons": "^7.0.0",
+    "react-navigation-stack": "^2.10.2",
+    "rimraf": "^3.0.2",
+    "universal-panresponder": "^0.6.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "@tsconfig/react-native": "^1.0.2",
+    "@types/jest": "^24.0.24",
+    "@types/react-native": "^0.63.19",
+    "@types/react-test-renderer": "16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "16.11.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
